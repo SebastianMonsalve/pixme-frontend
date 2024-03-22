@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { ContextApi } from "./components/contextApi";
+import { ContextApi } from "./components/ContextApi.jsx";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "./App.jsx";
 import "./css/style.css";
 import "./css/tablet.css";
 import "./css/mobile.css";
