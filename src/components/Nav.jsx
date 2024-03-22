@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../imagesLogin/LogoPIXME.png";
 import { contextProvider } from "./ContextApi";
 import { Navigate } from "react-router-dom";
 import { useState } from "react";
@@ -21,11 +22,7 @@ const Nav = () => {
         <i className="fa-solid fa-bars" />
       </button>
       <li className={isMenuOpen ? "closed" : "logo-sideclosed"}>
-        <img
-          className="icon-sideclosed"
-          src="/src/imagesLogin/LogoPIXME.png"
-          draggable="false"
-        />
+        <img className="icon-sideclosed" src={logo} draggable="false" />
         <span className="text-logo-sideclosed">PixMe</span>
       </li>
       <ul className={isMenuOpen ? null : "none"}>
