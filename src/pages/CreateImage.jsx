@@ -100,7 +100,7 @@ const CreateImage = () => {
                 />
               )
             ) : (
-              <img src={logo} draggable="false" />
+              <img src={logo} draggable="false" alt="false" />
             )}
           </div>
           <h2 className="Tittle">Subir Multimedia</h2>
