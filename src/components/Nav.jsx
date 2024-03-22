@@ -29,7 +29,7 @@ const Nav = () => {
         <li className="li-logo">
           <Link to={"/home"} className="btn-sidebar-home logo">
             <span className="icon">
-              <img src="/src/imagesLogin/LogoPIXME.png" draggable="false" />
+              <img src={logo} draggable="false" />
             </span>
             <span className="text-logo">PixMe</span>
           </Link>
