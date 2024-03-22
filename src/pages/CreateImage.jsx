@@ -10,7 +10,7 @@ import imagen6 from "../imagesLogin/image6.jpg";
 import logo from "../imagesLogin/LogoPIXME.png";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { contextProvider } from "../components/contextApi";
+import { contextProvider } from "../Components/contextApi";
 import Loading from "../components/Loading";
 import { Format } from "../components/Funtions";
 

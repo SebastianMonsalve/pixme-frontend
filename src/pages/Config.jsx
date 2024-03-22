@@ -7,7 +7,7 @@ import imagen5 from "../imagesLogin/image5.jpg";
 import imagen8 from "../imagesLogin/image8.jpg";
 import imagen6 from "../imagesLogin/image6.jpg";
 import logo from "../imagesLogin/LogoPIXME.png";
-import { contextProvider } from "../components/contextApi";
+import { contextProvider } from "../components/ContextApi";
 import { useParams, Link } from "react-router-dom";
 import Loading from "../components/Loading";
 import axios from "axios";

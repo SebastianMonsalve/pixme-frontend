@@ -1,7 +1,7 @@
 import { VITE_API_URL } from "../config";
 import React from "react";
 import axios from "axios";
-import { contextProvider } from "./contextApi";
+import { contextProvider } from "./ContextApi";
 
 const MenuDeleted = ({ id }) => {
   const { dumps, setDumps, images, setImages, section } = contextProvider();

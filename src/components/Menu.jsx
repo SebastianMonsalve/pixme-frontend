@@ -1,6 +1,6 @@
 import axios from "axios";
 import { VITE_API_URL } from "../config";
-import { contextProvider } from "./contextApi";
+import { contextProvider } from "./ContextApi";
 import { useState } from "react";
 import { Format } from "../components/Funtions";
 

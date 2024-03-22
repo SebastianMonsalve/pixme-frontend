@@ -1,6 +1,6 @@
 import Nav from "../components/Nav";
 import { useState } from "react";
-import { contextProvider } from "../components/contextApi";
+import { contextProvider } from "../components/ContextApi";
 import camara from "../imagesLogin/camara.png";
 import CardImage from "../components/CardImage";
 import ModalImage from "../components/ModalImage";
