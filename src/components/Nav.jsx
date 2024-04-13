@@ -8,6 +8,7 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { section, setSection } = contextProvider();
   const SingUp = () => {
+    localStorage.removeItem("section");
     setSection(null);
     return <Navigate to={"/login"} replace />;
   };
