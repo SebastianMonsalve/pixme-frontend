@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { VITE_API_URL } from "../config";
 import logo from "../imagesLogin/LogoPIXME.png";
 import imagen3 from "../imagesLogin/image3.jpg";
@@ -39,6 +39,19 @@ const Login = () => {
       });
   };
 
+  useEffect(() => {
+    (async () => {
+      const userAuth = localStorage.getItem("section")
+      if (userAuth) {
+        const res = await axios.get(`${VITE_API_URL}/users/${JSON.parse(userAuth)}`);
+        setSection(res.data);
+        if (res.data !== "Not found") {
+          setImages(res.data[0].images);
+        }
+        navigate("/home");
+      }
+    })();
+  }, []);
   return (
     <>
       <div className="Main">
