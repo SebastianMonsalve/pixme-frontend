@@ -41,9 +41,11 @@ const Login = () => {
 
   useEffect(() => {
     (async () => {
-      const userAuth = localStorage.getItem("section")
+      const userAuth = localStorage.getItem("section");
       if (userAuth) {
-        const res = await axios.get(`${VITE_API_URL}/users/${JSON.parse(userAuth)}`);
+        const res = await axios.get(
+          `${VITE_API_URL}/users/${JSON.parse(userAuth)}`
+        );
         setSection(res.data);
         if (res.data !== "Not found") {
           setImages(res.data[0].images);

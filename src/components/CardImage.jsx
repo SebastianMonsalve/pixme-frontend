@@ -38,6 +38,7 @@ const CardImage = ({
         <img
           src={item.image.url}
           alt="Images"
+          loading="lazy"
           draggable="false"
           onClick={() => {
             document.body.style.overflow = "hidden";
